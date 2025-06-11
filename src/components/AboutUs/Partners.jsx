@@ -1,10 +1,10 @@
 import React from 'react';
-import partner1 from '../../assets/Partners/Partner (1).png';
-import partner2 from '../../assets/Partners/partner (2).png';
-import partner3 from '../../assets/Partners/partner (3).png';
-import partner4 from '../../assets/Partners/partner (4).png';
-import partner5 from '../../assets/Partners/partner (5).png';
-import partner6 from '../../assets/Partners/partner (6).png';
+import partner1 from '../../assets/Partners/Partner-1.png';
+import partner2 from '../../assets/Partners/Partner-2.png';
+import partner3 from '../../assets/Partners/Partner-3.png';
+import partner4 from '../../assets/Partners/Partner-4.png';
+import partner5 from '../../assets/Partners/Partner-5.png';
+import partner6 from '../../assets/Partners/Partner-6.png';
 
 const partnerLogos = [
   { src: partner1, alt: 'Partner 1' },
