@@ -1,5 +1,5 @@
 import React from 'react';
-import { Brain, Code, Smartphone, Cloud, Settings, Cpu, ShieldCheck, Blocks, Bot } from 'lucide-react'; // Ensure lucide-react is installed
+import { Brain, Code, Smartphone, Cloud, Settings, Cpu, ShieldCheck, Blocks, Bot } from 'lucide-react';
 
 const services = [
   {
@@ -69,14 +69,14 @@ const services = [
 
 export default function Servicegrid() {
   return (
-    <div className="bg-gray-50 py-16 sm:py-24">
+    <div className="bg-gray-50 py-8 sm:py-12">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-center text-base font-semibold text-indigo-600">Our Services</h2>
         <p className="mt-2 text-center text-4xl font-bold text-gray-900 sm:text-5xl">
           Empowering Your Digital Transformation
         </p>
 
-        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, idx) => (
             <div
               key={idx}

@@ -73,7 +73,8 @@ const ServicesBentoGrid = () => {
           Empowering Businesses to Thrive
         </p>
 
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Flex layout to center align and wrap cards */}
+        <div className="mt-16 flex flex-wrap justify-center gap-6">
           {services.map((service, index) => (
             <motion.div
               key={index}
@@ -81,7 +82,7 @@ const ServicesBentoGrid = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`rounded-2xl bg-gradient-to-br ${service.bg} p-8 shadow-lg transform transition-transform hover:scale-105 hover:brightness-90 text-white`}
+              className={`w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] max-w-[400px] rounded-2xl bg-gradient-to-br ${service.bg} p-8 shadow-lg transform transition-transform hover:scale-105 hover:brightness-90 text-white`}
             >
               <div className="flex justify-center mb-6">{service.icon}</div>
               <h3 className="text-xl font-semibold text-center">{service.title}</h3>

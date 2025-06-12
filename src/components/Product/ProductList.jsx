@@ -3,7 +3,7 @@ import { Smartphone, HeartPulse, Car, Users } from 'lucide-react'; // lucide-rea
 
 export default function ProductsList() {
   return (
-    <div className="bg-gray-50 py-24 sm:py-32">
+    <div className="bg-gray-50 py-10 sm:py-14">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <h2 className="text-center text-base font-semibold text-indigo-600">Explore Our Services</h2>
         <p className="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
@@ -11,7 +11,6 @@ export default function ProductsList() {
         </p>
 
         <div className="mt-12 grid gap-6 sm:mt-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-
           {/* Mobile Application */}
           <div className="group relative rounded-2xl border border-gray-200 bg-white p-6 transition hover:shadow-lg hover:scale-105">
             <div className="flex justify-center mb-4">
@@ -86,7 +85,6 @@ export default function ProductsList() {
               <li>Security</li>
             </ul>
           </div>
-
         </div>
       </div>
     </div>

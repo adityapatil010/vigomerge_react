@@ -4,8 +4,7 @@ import Features from '../components/Features';
 import Services from '../components/ServicesCards';
 import Cta from '../components/Cta';
 import ServicesBentoGrid from '../components/ServicesBentoGrid';
-import TrustedClients from '../components/Clients';
-import StatsSection from '../components/StatsSection';
+import ClientStatsSection from '../components/Clients';
 const Home = () => {
   return (
     <div>
@@ -14,8 +13,8 @@ const Home = () => {
         <Services />
         <Cta />
         <ServicesBentoGrid />
-        <TrustedClients />
-        <StatsSection />
+        <ClientStatsSection />
+       
     </div>
   );
 };
