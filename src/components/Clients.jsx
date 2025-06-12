@@ -64,22 +64,28 @@ const ClientStatsSection = () => {
         }
         .logo-container {
           flex-shrink: 0;
-          width: 10%;
-          padding: 0 2rem;
+          min-width: 120px;
+          padding: 0 1rem;
         }
         .logo-img {
-          height: 3rem;
+          height: 2.5rem;
           width: 100%;
           object-fit: contain;
+        }
+        @media (min-width: 768px) {
+          .logo-img {
+            height: 3.5rem;
+          }
         }
       `}</style>
 
       {/* Clients Section */}
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="text-center text-base font-semibold text-indigo-600">
-          We are proud to collaborate with leading organizations in the industry, driving innovation and excellence in every project.
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 className="text-center text-sm sm:text-base font-semibold text-indigo-600">
+          We are proud to collaborate with leading organizations in the industry,
+          driving innovation and excellence in every project.
         </h2>
-        <p className="mx-auto mt-4 max-w-lg text-center text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">
+        <p className="mx-auto mt-4 max-w-xl text-center text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900">
           Clients
         </p>
         <div className="mt-10 relative w-full overflow-hidden">
@@ -94,25 +100,25 @@ const ClientStatsSection = () => {
       </div>
 
       {/* Stats Section */}
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-20">
-        <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center sm:grid-cols-2 lg:grid-cols-4">
-          {stats.map((stat, i) => (
-            <motion.div
-              key={stat.id}
-              className="mx-auto flex max-w-xs flex-col gap-y-4 bg-white p-6 rounded-2xl shadow-md hover:scale-105 transition-transform"
-              variants={cardVariants}
-              initial="hidden"
-              animate={inView ? 'visible' : 'hidden'}
-              custom={i}
-            >
-              <dt className="text-base text-gray-600">{stat.name}</dt>
-              <dd className="order-first text-4xl font-bold tracking-tight text-indigo-600 sm:text-5xl">
-                {stat.value}
-              </dd>
-            </motion.div>
-          ))}
-        </dl>
-      </div>
+      <div className="mx-auto mt-20 w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <dl className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 text-center">
+  {stats.map((stat, i) => (
+    <motion.div
+      key={stat.id}
+      className="flex flex-col items-center justify-center bg-white p-6 rounded-2xl shadow-md hover:scale-105 transition-transform"
+      variants={cardVariants}
+      initial="hidden"
+      animate={inView ? 'visible' : 'hidden'}
+      custom={i}
+    >
+      <dt className="text-sm sm:text-base text-gray-600">{stat.name}</dt>
+      <dd className="order-first text-3xl sm:text-4xl font-bold tracking-tight text-indigo-600">
+        {stat.value}
+      </dd>
+    </motion.div>
+  ))}
+</dl>
+ </div>
     </div>
   );
 };
